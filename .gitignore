@@ -67,4 +67,5 @@ venv
 *.lock
 *.toml
 *.nix
+__pycache__
 security_info_helper.py
