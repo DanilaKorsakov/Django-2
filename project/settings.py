@@ -9,11 +9,11 @@ env.read_env()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': env.str("HOST"),
-        'PORT': env.str("PORT"),
-        'NAME': env.str("NAME"),
-        'USER': env.str("USER"),
-        'PASSWORD': env.str("PASSWORD"),
+        'HOST': env.str("DB_HOST"),
+        'PORT': env.str("DB_PORT"),
+        'NAME': env.str("DB_NAME"),
+        'USER': env.str("DB_USER"),
+        'PASSWORD': env.str("DB_PASSWORD"),
     }
 }
 
@@ -40,9 +40,9 @@ TEMPLATES = [
 
 USE_L10N = True
 
-LANGUAGE_CODE = env.str("LANGUAGE_CODE")
+LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = env.str("TIME_ZONE")
+TIME_ZONE = 'Europe/Moscow'
 
 USE_TZ = True
 
